@@ -1,8 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'jacoco'
 }
+
+apply from: 'jacoco_unit_test.gradle'
 
 android {
     compileSdkVersion 29
