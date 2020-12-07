@@ -1,5 +1,15 @@
 project.plugins.apply('jacoco')
 project.jacoco.toolVersion '0.8.2'
+project.android.buildTypes {
+    //toggle for report only
+    debug {
+        testCoverageEnabled true
+    }
+
+    release {
+        testCoverageEnabled false
+    }
+}
 
 //如果集成Jenkins Pipeline，只需在Jenkins上安装Jacoco plugin，并且使用下面的Test Stage即可，无需执行jacocoTestReport task
 //stage('Test') {
