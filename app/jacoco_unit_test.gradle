@@ -14,10 +14,10 @@ project.android.buildTypes {
 //如果集成Jenkins Pipeline，只需在Jenkins上安装Jacoco plugin，并且使用下面的Test Stage即可，无需执行jacocoTestReport task
 //stage('Test') {
 //    steps {
-//        sh './gradlew -p ${project} testStagDebugUnitTest'
+//        sh './gradlew -p ${project} testDebugUnitTest'
 //        jacoco(
-//                execPattern: "${project}/build/jacoco/testStagDebugUnitTest.exec",
-//                classPattern: "${project}/build/intermediates/javac/StagDebug, ${project}/build/tmp/kotlin-classes/StagDebug",
+//                execPattern: "${project}/build/jacoco/testDebugUnitTest.exec",
+//                classPattern: "${project}/build/intermediates/javac/Debug, ${project}/build/tmp/kotlin-classes/Debug",
 //                sourcePattern: "${project}/src/main/java, ${project}/src/main/kotlin",
 //                exclusionPattern: '**/R.class,**/R$*.class,**/*$ViewInjector*.*,**/*$Companion.*,**/*$ViewBinder*.*,**/BuildConfig.*,**/Manifest*.*,**/*$Lambda$*.*,**/*Module.*,**/*Dagger*.*,**/*MembersInjector*.*,**/*_Provide*Factory*.*,**/*_Factory*.*,**/*$*$*.*'
 //        )
